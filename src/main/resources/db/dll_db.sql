@@ -129,3 +129,42 @@ alter table product add column email varchar(255);
 
     alter table product 
        add column email varchar(255);
+
+    alter table product 
+       add column email varchar(255);
+
+    alter table product 
+       add column email varchar(255);
+
+    alter table product 
+       add column email varchar(255);
+
+    alter table product 
+       add column email varchar(255);
+
+    alter table product 
+       add column email varchar(255);
+
+    alter table product 
+       add column email varchar(255);
+
+    alter table product 
+       add column email varchar(255);
+
+    alter table product 
+       add column email varchar(255);
+
+    alter table product 
+       add column email varchar(255);
+
+    alter table product 
+       add column email varchar(255);
+
+    alter table product 
+       add column email varchar(255);
+
+    alter table product 
+       add column email varchar(255);
+
+    alter table product 
+       add column email varchar(255);

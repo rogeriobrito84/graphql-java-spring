@@ -2,7 +2,6 @@ package br.com.studies.graphql.api.graphql;
 
 import br.com.studies.graphql.api.graphql.dto.ClientDTO;
 import br.com.studies.graphql.domain.service.ClientService;
-import br.com.studies.graphql.domain.Client;
 import br.com.studies.graphql.infra.mapper.ClientMapper;
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
@@ -30,8 +29,8 @@ public class ClientGraphQL implements GraphQLQueryResolver, GraphQLMutationResol
                 .map(mapper::toDTO).collect(Collectors.toList());
     }
 
-    public ClientDTO saveClient(Long id, String name, String email) {
-        var model = service.save(new Client(id, name, email));
+    public ClientDTO saveClient(ClientDTO dto) {
+        var model = service.save(mapper.toDomain(dto));
         return mapper.toDTO(model);
     }
 
